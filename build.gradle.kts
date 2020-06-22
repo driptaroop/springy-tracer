@@ -1,0 +1,7 @@
+allprojects{
+    group = "xyz.dripto"
+    version = "0.0.1-SNAPSHOT"
+    repositories {
+        jcenter()
+    }
+}

@@ -1,0 +1,13 @@
+package xyz.dripto.appb.controller
+
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
+
+@RestController
+@RequestMapping("/appb")
+class CalculatorController {
+    @GetMapping("/multiply/{num}")
+    fun multiplyBy(@PathVariable("num") i: Int) = i * 2
+}
